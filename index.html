@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAH! 2K26 - ACM Student Chapter</title>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link to the custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAVIGATION BAR -->
+     <!-- Neon Starfield Background -->
+    <canvas id="starfield"></canvas>
+    <nav id="nav-menu" class="nav-menu">
+        <div class="nav-content">
+            <a href="#home" class="nav-brand glow-text">YAH! 2K26</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#domains" class="nav-link">Problem Statements</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#register" class="nav-link btn accent-cta">Register</a>
+            </div>
+            <button id="nav-toggle" class="nav-icon btn pulse" aria-label="Toggle Navigation">
+                <i class="fas fa-terminal"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- 1. HOME SECTION (Header) -->
+        <section id="home" class="hero-bg">
+    <div class="hero-container">
+
+        <!-- Logo -->
+        <img src="yah logo.png" alt="YAH Logo" class="hero-logo">
+
+        <h2 class="hero-title neon-text">
+            YAH 2K26
+        </h2>
+
+        <p class="hero-subtitle">SVCE ACM Student Chapter Hackathon</p>
+        <p class="hero-date">21st - 22nd February 2026</p>
+
+        <div class="countdown glass-card elevated-card">
+            <p class="countdown-label">Time Remaining Until Kickoff:</p>
+            <div id="countdown-timer" class="countdown-timer glow-text">00:00:00:00</div>
+        </div>
+
+        <a href="#register" class="btn primary-cta large-cta pulse">
+            <i class="fas fa-sign-in-alt"></i> Register Now
+        </a>
+    </div>
+</section>
+
+        <section id="about" class="section-padding">
+            <h2><i class="fas fa-eye"></i> The Event At A Glance</h2>
+            <p class="section-description">A deep dive into the numbers and impact of the premier college hackathon.</p>
+            <div class="stats-grid grid-layout">
+
+                <!-- Stat Card 1 -->
+                <div class="stat-card glass-card elevated-card scroll-reveal delay-1">
+                    <i class="fas fa-code stat-icon glow-text"></i>
+                    <p class="stat-number glow-text">24</p>
+                    <p class="stat-label">Hours of Intense Hacking</p>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="stat-card glass-card elevated-card scroll-reveal delay-2">
+                    <i class="fas fa-trophy stat-icon glow-text"></i>
+                    <p class="stat-number glow-text" style="font-size: 1.8rem;">Prize Pool</p>
+                    <p class="stat-label">& Recognition</p>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="stat-card glass-card elevated-card scroll-reveal delay-3">
+                    <i class="fas fa-users stat-icon glow-text"></i>
+                    <p class="stat-number glow-text">100+</p>
+                    <p class="stat-label">Participants Expected</p>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="stat-card glass-card elevated-card scroll-reveal delay-4">
+                    <i class="fas fa-compass stat-icon glow-text"></i>
+                    <p class="stat-number glow-text">6</p>
+                    <p class="stat-label">Distinct Technical Domains</p>
+                </div>
+
+            </div>
+
+            <p class="about-text scroll-reveal">YAH! 2K26 is more than just a hackathon; it’s a crucible for innovation.
+                Spend 24 continuous hours building disruptive solutions and refining your skills under expert
+                mentorship.</p>
+        </section>
+
+        <!-- 3. DOMAINS SECTION (Permanent Glow Cards) -->
+        <section id="domains" class="section-padding">
+            <h2><i class="fas fa-brain"></i> Problem Statements</h2>
+            <p class="section-description">Explore the various challenge tracks below and <strong>click on any
+                    card</strong> to view its specific <strong>Problem Statements.</strong></p>
+
+            <div class="domains-grid grid-layout">
+
+                <!-- Domain Card 1: AI / Machine Learning -->
+                <a href="domain-ai.html" class="domain-card glass-card glass-glow scroll-reveal delay-1">
+                    <i class="fas fa-robot domain-icon"></i>
+                    <h3>AI / Machine Learning</h3>
+                    <p>Develop intelligent systems, predictive models, and sophisticated neural networks.</p>
+                </a>
+
+                <!-- Domain Card 2: Blockchain & Web3 -->
+                <a href="domain-blockchain.html" class="domain-card glass-card glass-glow scroll-reveal delay-2">
+                    <i class="fas fa-link domain-icon"></i>
+                    <h3>Blockchain</h3>
+                    <p>Implement decentralized ledger technology, smart contracts, and secure applications.</p>
+                </a>
+
+                <!-- Domain Card 3: Cybersecurity -->
+                <a href="domain-cyber.html" class="domain-card glass-card glass-glow scroll-reveal delay-3">
+                    <i class="fas fa-shield-alt domain-icon"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Focus on security protocols, threat detection, and building resilient systems.</p>
+                </a>
+
+                <!-- Domain Card 4: Game Design -->
+                <a href="domain-game.html" class="domain-card glass-card glass-glow scroll-reveal delay-4">
+                    <i class="fas fa-gamepad domain-icon"></i>
+                    <h3>Gamification</h3>
+                    <p>Build engaging interactive experiences, simulations, or innovative game mechanics.</p>
+                </a>
+
+                <!-- Domain Card 5: Real-World Problems -->
+                <a href="domain-realworld.html" class="domain-card glass-card glass-glow scroll-reveal delay-5">
+                    <i class="fas fa-globe-asia domain-icon"></i>
+                    <h3>Real-World Problems</h3>
+                    <p>Solve local or global challenges in healthcare, education, or sustainability using tech.</p>
+                </a>
+
+                <!-- Domain Card 6: Open Innovation (placeholder, routed later if needed) -->
+                <div class="domain-card glass-card glass-glow scroll-reveal delay-6">
+                    <i class="fas fa-lightbulb domain-icon"></i>
+                    <h3>Open Innovation</h3>
+                    <p>Bring your own unique idea or platform solution to the table.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 4. SCHEDULE SECTION (Vertical Timeline) -->
+        <section id="schedule" class="section-padding">
+            <h2><i class="fas fa-calendar-alt"></i> Event Schedule</h2>
+            <p class="section-description">All events are marked on a vertical timeline for easy mobile viewing. Follow
+                the glowing dots!</p>
+
+            <!-- Day 1 Timeline -->
+            <h3 class="timeline-day-header scroll-reveal">Day 1 - 21st February</h3>
+            <div class="timeline-container">
+                <ul class="timeline">
+
+                    <!-- Event 1 -->
+                    <li class="timeline-item scroll-reveal delay-1">
+                        <div class="timeline-dot glow-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <p class="time">09:00 AM</p>
+                            <p class="event-title">Inauguration</p>
+                            <p class="event-details">Opening remarks, keynote speaker, and welcome address.</p>
+                        </div>
+                    </li>
+
+                    <!-- Event 2 -->
+                    <li class="timeline-item scroll-reveal delay-2">
+                        <div class="timeline-dot glow-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <p class="time">10:00 AM</p>
+                            <p class="event-title">Hacking Begins</p>
+                            <p class="event-details">Teams start coding! Lunch and refreshments provided later.</p>
+                        </div>
+                    </li>
+
+                    <!-- Event 3 -->
+                    <li class="timeline-item scroll-reveal delay-3">
+                        <div class="timeline-dot glow-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <p class="time">After 4:30 PM</p>
+                            <p class="event-title">First Evaluation</p>
+                            <p class="event-details">Initial review by mentors/judges. Checkpoint 1.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Day 2 Timeline -->
+            <h3 class="timeline-day-header scroll-reveal delay-4">Day 2 - 22nd February</h3>
+            <div class="timeline-container">
+                <ul class="timeline">
+
+                    <!-- Event 4 -->
+                    <li class="timeline-item scroll-reveal delay-5">
+                        <div class="timeline-dot glow-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <p class="time">10:00 AM</p>
+                            <p class="event-title">Final Evaluation</p>
+                            <p class="event-details">Live demos and judging panel Q&A session.</p>
+                        </div>
+                    </li>
+
+                    <!-- Event 5 -->
+                    <li class="timeline-item scroll-reveal delay-6">
+                        <div class="timeline-dot glow-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <p class="time">11:00 AM</p>
+                            <p class="event-title">Closing Ceremony</p>
+                            <p class="event-details">Prize announcement, winner felicitations, and thanks.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+
+
+        <!-- 6. REGISTRATION SECTION (High-Visibility CTA) -->
+        <section id="register" class="section-padding">
+            <h2><i class="fas fa-clipboard-list"></i> Secure Your Spot</h2>
+            <p class="section-description">Team up, register, and prepare to hack! Read the guidelines before submitting
+                your entry.</p>
+
+            <!-- Registration Card: Floating Glass Card with Strong Glow -->
+            <div class="registration-card glass-card glass-glow scroll-reveal">
+                <h3 class="reg-title">Hackathon Registration Details</h3>
+
+                <div class="reg-detail-list">
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <p>Team Size: <strong>4 Members</strong></p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-file-signature"></i>
+                        <p>Rule: <strong>One Registration Per Team</strong></p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-rupee-sign"></i>
+                        <p>Initial Registration: <strong>FREE</strong></p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p>Shortlisting Fee: ₹250 per person (Paid after shortlisting)</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-times"></i>
+                        <p>Registration Deadline: <strong>February 4th 2026</strong> (Don't miss it!)</p>
+                    </div>
+                </div>
+
+                <hr class="glow-divider">
+
+                <!-- CTA Button (Large Tap-Friendly, Permanent Glow) -->
+                <a href="https://forms.gle/6wswVNAjWXuESV996" target="_blank" class="btn accent-cta large-cta pulse">
+                    <i class="fas fa-arrow-alt-circle-right"></i> Register Now
+                </a>
+            </div>
+
+            <p class="section-note">Clicking "Register Now" will redirect you to the official Google Form for team
+                submission.</p>
+
+        </section>
+
+        <!-- 7. FAQ SECTION (Glowing Accordion) -->
+        <section id="faq" class="section-padding">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <p class="section-description">Find quick answers to common queries regarding teams, rules, and logistics.
+                Tap on any card to expand the answer.</p>
+
+            <div class="faq-accordion-container">
+
+                <!-- FAQ Item 1 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-1">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> Can I register as an individual?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No. YAH! 2K26 is strictly a team event. The required team size is 4 members. We encourage you
+                            to find your teammates before the registration deadline.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-2">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> Is there a registration fee?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Initial registration is <strong>FREE</strong>. A nominal fee of ₹250 per person will be
+                            collected only
+                            <strong>after</strong> your team is shortlisted and confirmed for the final 24-hour
+                            hackathon.
+                        </p>
+
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-3">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> What should I bring to the event?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Bring your laptops, chargers, power strips, and any necessary peripherals (mouse, keyboard,
+                            monitors, etc.). Basic amenities and food will be provided on-site.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-4">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> Are there specific languages or tech stacks we must use?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No. You are free to use any programming language, framework, or technology stack you prefer,
+                            as long as it aligns with one of the specified domains and solves the problem statement
+                            effectively.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 5 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-5">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> Can team members be from different colleges?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes. Inter-college teams are allowed.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 6 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-6">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> How will projects be evaluated?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Projects will be judged based on innovation, technical implementation, problem relevance,
+                            scalability, and presentation.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 7 -->
+                <details class="faq-item glass-card elevated-card scroll-reveal delay-7">
+                    <summary class="faq-question">
+                        <i class="fas fa-plus-circle"></i> Will certificates be provided?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes. Participation certificates will be provided to all shortlisted teams, and winners will
+                            receive special certificates and recognition.</p>
+                    </div>
+                </details>
+
+            </div>
+
+        </section>
+
+        <!-- 8. VENUE SECTION (Location Map) -->
+        <section id="venue" class="section-padding">
+            <h2><i class="fas fa-map-marker-alt"></i> Event Venue</h2>
+            <p class="section-description">
+                The event is being held at a premier innovation and startup hub in Chennai.
+                Find the location below and get directions via the map.
+            </p>
+
+            <!-- Venue Card -->
+            <div class="venue-card glass-card glass-glow scroll-reveal">
+
+                <h3 class="venue-title">TANSAM – TIDEL Park</h3>
+
+                <div class="location-details">
+                    <div class="detail-item">
+                        <img src="assets/images/acm_logo.svg.png" alt="ACM Logo" class="inline-logo">
+                        <p>
+                            Host Venue:
+                            <strong>TANSAM (Tamil Nadu Startup & Innovation Mission)</strong>
+                        </p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>
+                            TIDEL Park, Rajiv Gandhi IT Expressway,
+                            Tharamani, Chennai, Tamil Nadu 600113
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="glow-divider">
+
+                <!-- Embedded Google Map -->
+                <div class="map-container elevated-card scroll-reveal delay-1">
+                    <iframe class="venue-map"
+                        src="https://www.google.com/maps?q=TANSAM+TIDEL+Park+Tharamani&output=embed" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!-- Direction Button -->
+            <div class="directions-wrapper">
+                <a href="https://www.google.com/maps?q=TANSAM+TIDEL+Park+Tharamani" target="_blank"
+                    class="btn primary-cta large-cta scroll-reveal">
+                    <i class="fas fa-route"></i> Get Directions
+                </a>
+            </div>
+            <p class="section-note">Tap above to open Google Maps for navigation.</p>
+
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-coordinators">
+                        <h3 class="contact-subtitle">Coordinators</h3>
+                        <div class="coordinator-card">
+                            <div class="coordinator-name">Shridevi R</div>
+                            <div class="coordinator-phone">6369208938</div>
+                        </div>
+                        <div class="coordinator-card">
+                            <div class="coordinator-name">Pragadeesh</div>
+                            <div class="coordinator-phone">9360760557</div>
+                        </div>
+                        <div class="coordinator-card">
+                            <div class="coordinator-name">Bhavishya V</div>
+                            <div class="coordinator-phone">9493622113</div>
+                        </div>
+                    </div>
+                    <div class="contact-email">
+                        <h3 class="contact-subtitle">Email</h3>
+                        <div class="email-card">
+                            <a href="mailto:acm.svcecse@gmail.com">acm.svcecse@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3 class="contact-subtitle">Social Media</h3>
+                        <div class="social-grid">
+
+                            <a href="https://www.instagram.com/svceacm?igsh=MTdzanVoamJ4c24zMA%3D%3D"
+                                class="social-card" aria-label="Instagram" target="_blank">
+                                <i class="fab fa-instagram social-icon"></i>
+                                <span class="social-name">Instagram</span>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/svceacm/posts/?feedView=all" class="social-card"
+                                aria-label="LinkedIn" target="_blank">
+                                <i class="fab fa-linkedin-in social-icon"></i>
+                                <span class="social-name">LinkedIn</span>
+                            </a>
+
+                            <a href="https://svcechennai.acm.org/" class="social-card" aria-label="ACM SVCE Website"
+                                target="_blank">
+                                <i class="fas fa-globe social-icon"></i>
+                                <span class="social-name">ACM SVCE</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Made with <i class="fas fa-heart"></i> by <a href="https://svcechennai.acm.org/team.html"
+                    target="_blank" rel="noopener noreferrer">SVCE ACM🌷</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Link to the custom scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
