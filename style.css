@@ -1431,7 +1431,10 @@ h3 i,
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* lets clicks pass through */
-    z-index: 0; /* behind all content */
-    background: var(--color-background); /* matches your main bg */
+
+    z-index: -1;            /* 🔥 KEY FIX */
+    pointer-events: none;
+
+    background: transparent;
 }
+
