@@ -1494,7 +1494,6 @@ h3 i,
     padding: 20px;
     object-fit: contain;
 
-    /* DARK opaque background for white text logos */
     background: rgba(10, 15, 25, 0.9);
 
     border-radius: 16px;
@@ -1505,4 +1504,54 @@ h3 i,
 .sponsors-logos img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 35px rgba(0, 255, 255, 0.6);
+}
+.alumni-card {
+    position: relative;
+
+    /* SINGLE background box */
+    background: rgba(10, 15, 25, 0.95);
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    overflow: visible;
+}
+
+/* Increase ONLY the image size */
+.alumni-card img {
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    transform: scale(1.35);
+}
+
+/* Hover effect */
+.alumni-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+/* Alumni badge */
+.alumni-badge {
+    position: absolute;
+    bottom: -12px;
+    right: 12px;
+
+    background: rgba(0, 255, 255, 0.95);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 12px;
+
+    border-radius: 999px;
+    text-transform: uppercase;
 }
