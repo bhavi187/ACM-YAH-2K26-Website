@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERP System Problem Statement — YAH! 2K26</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0a1a2a;
+            color: #eaf6ff;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00bfff;
+            text-shadow: 0 0 12px rgba(0,191,255,0.6);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #00bfff;
+            text-shadow: 0 0 10px rgba(0,191,255,0.5);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #00bfff;
+            margin-top: 1.5rem;
+            text-shadow: 0 0 8px rgba(0,191,255,0.4);
+            border-left: 4px solid #00bfff;
+            padding-left: 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: #00d4ff;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            margin-bottom: 3rem;
+        }
+
+        strong {
+            color: #00e5ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        footer i {
+            color: #ff5f7a;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>School / University ERP System</h1>
+
+        <div class="card">
+            <h2>Problem Statement</h2>
+            <p>
+                Design and build a foundational School/University ERP system that can be used by multiple institutions
+                and scale as the number of students, staff, and schools grows. The product should cover a clear core user
+                workflow that students can easily understand and visualize (such as onboarding users, managing academic
+                records, or institutional operations). In the initial abstract and presentation stage, teams must propose
+                their feature set and a high-level system architecture showing how the system would scale across institutions
+                and users. For the hackathon implementation, selected teams should build the proposed architecture to a
+                realistic extent, focusing on delivering an end-to-end working product. The backend must be built using Python,
+                while teams are free to use any frontend framework and any database or infrastructure
+                components that best fit their design. Teams are encouraged to make strong engineering decisions that maximize
+                speed and impact, including using third-party tools or services (e.g., OAuth-based authentication providers)
+                to avoid unnecessary code ownership. The primary goal is to evaluate how quickly teams can go from zero to one
+                by building only what is essential, making production-minded architecture choices, and demonstrating strong
+                founding velocity. Teams are recommended to leverage their favorite AI-powered tooling as they see fit.
+                The problem statement is intentionally open-ended on certain aspects to encourage candidate teams in showcasing
+                their creative engineering skills. Candidate teams during their hackathon are expected to work on a public
+                repository since their code will be evaluated for quality and accuracy among other things.
+            </p>
+
+            <h2>Evaluation Guidelines</h2>
+            <h3>1. Product Completion</h3>
+            <p><strong>Looking for:</strong></p>
+            <ul>
+                <li>The team delivers a working product that can be used end to end.</li>
+                <li>The main user flow works without requiring explanations.</li>
+                <li>The scope is clear and intentionally limited.</li>
+            </ul>
+            <p><strong>Not looking for:</strong></p>
+            <ul>
+                <li>Only mockups or partial implementations.</li>
+                <li>Many features started but none completed.</li>
+            </ul>
+
+            <h3>2. User & Product Understanding</h3>
+            <p><strong>Looking for:</strong></p>
+            <ul>
+                <li>The team clearly understands who the user is and what problem is being solved.</li>
+                <li>Features directly support the main user workflow.</li>
+                <li>The team can explain why certain features were not built.</li>
+            </ul>
+            <p><strong>Not looking for:</strong></p>
+            <ul>
+                <li>Unclear target user or problem.</li>
+                <li>Features added without a clear purpose.</li>
+            </ul>
+
+            <h3>3. System & Architecture Choices</h3>
+            <p><strong>Looking for:</strong></p>
+            <ul>
+                <li>The system architecture is simple and appropriate for the problem.</li>
+                <li>Correct use of components such as frontend, backend, database, and infrastructure.</li>
+                <li>Infrastructure choices match the product needs (e.g., managed services where suitable).</li>
+            </ul>
+            <p><strong>Not looking for:</strong></p>
+            <ul>
+                <li>Overly complex architecture without justification.</li>
+                <li>Incorrect or unnecessary infrastructure components.</li>
+            </ul>
+
+            <h3>4. Engineering Judgment</h3>
+            <p><strong>Looking for:</strong></p>
+            <ul>
+                <li>The team avoids unnecessary work by using existing tools and services.</li>
+                <li>Examples include using OAuth for authentication or managed AI APIs instead of self-hosting or implementing relevant modules.</li>
+                <li>Technical decisions help the team ship faster and more reliably.</li>
+                <li>Researching and reusing the most appropriate libraries for the task.</li>
+            </ul>
+            <p><strong>Not looking for:</strong></p>
+            <ul>
+                <li>Rebuilding standard components without need.</li>
+                <li>Complex setups that slow down delivery.</li>
+            </ul>
+
+            <h3>5. Functional & Accessible UI</h3>
+            <p><strong>Looking for:</strong></p>
+            <ul>
+                <li>The interface is clear, usable, and easy to navigate.</li>
+                <li>Forms, errors, and loading states are handled properly.</li>
+                <li>Accessibility basics such as readable text and keyboard usage are considered.</li>
+            </ul>
+            <p><strong>Not looking for:</strong></p>
+            <ul>
+                <li>UI looks good but does not work well.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by 
+            <a href="https://svcechennai.acm.org/team.html" target="_blank">SVCE ACM Web Team</a>
+        </p>
+    </footer>
+</body>
+</html>
