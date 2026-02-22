@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const countdownElement = document.getElementById('countdown-timer');
     if (countdownElement) {
         const targetDate = new Date('February 21, 2026 09:00:00 GMT+0530').getTime();
-
+        let countdownInterval;
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = targetDate - now;
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         updateCountdown();
-        const countdownInterval = setInterval(updateCountdown, 1000);
+        countdownInterval = setInterval(updateCountdown, 1000);
     }
 
     const navMenu = document.getElementById('nav-menu');
